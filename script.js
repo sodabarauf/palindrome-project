@@ -5,7 +5,7 @@ const result = document.getElementById('result');
 checkBtn.addEventListener('click', palindrome);
 
 function palindrome() {
-  if (textInput.value === ''){
+  if (textInput.value === '') {
     alert('please input a value');
     result.innerHTML = '';
     return;
