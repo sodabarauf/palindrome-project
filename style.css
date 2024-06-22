@@ -60,7 +60,7 @@ button {
 @media (max-width: 400px) {
   .card {
     margin: 10px;
-    display: content;
+    position: relative;
+    display: contents;
   }
 }
-
