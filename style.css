@@ -1,5 +1,5 @@
 body {
-  background-image: url(./javascript\ image.webp);
+  background-image: url(./assets/javascript\ image.webp);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -56,3 +56,26 @@ button {
 #result {
   color: black;
 }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section .container img {
+    display: none;
+  }
+
+  .description p {
+    display: contents;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
