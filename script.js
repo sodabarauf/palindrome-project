@@ -22,8 +22,8 @@ function palindrome() {
   }
 
   if (ispalindrome) {
-    result.innerHTML = textInput.value + ` is a palindrome`;
+    result.innerHTML = `${textInput.value} is a palindrome`;
   } else {
-    result.innerHTML = textInput.value + ` is not a palindrome`;
+    result.innerHTML = `${textInput.value} is not a palindrome`;
   }
 }
