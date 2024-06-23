@@ -1,29 +1,18 @@
 const textInput = document.getElementById('text-input');
 const checkBtn = document.getElementById('check-btn');
 const result = document.getElementById('result');
-
-checkBtn.addEventListener('click', palindrome);
-
-function palindrome() {
+checkBtn.addEventListener('click', () => {
+  const lowerReplaced = textInput.value.toLowerCase().replace(/[^A-Za-z0-9]/g, '');
   if (textInput.value === '') {
     alert('please input a value');
-    result.innerHTML = '';
-    return;
-  }
-
-  const processedStr = textInput.value.replace(/[\W_]/g, '').toLowerCase();
-  let ispalindrome = true;
-
-  for (let i = 0; i < Math.floor(processedStr.length / 2); ++i) {
-    if (processedStr[i] !== processedStr[processedStr.length - 1 - i]) {
-      ispalindrome = false;
-      break;
-    }
-  }
-
-  if (ispalindrome) {
+  } else if (textInput.value.length === 1) {
     result.innerHTML = `${textInput.value} is a palindrome`;
+    textInput.value = '';
+  } else if (lowerReplaced === [...lowerReplaced].reverse().join('')) {
+    result.innerHTML = `${textInput.value} is a palindrome`;
+    textInput.value = '';
   } else {
     result.innerHTML = `${textInput.value} is not a palindrome`;
+    textInput.value = '';
   }
-}
+});
