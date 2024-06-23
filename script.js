@@ -2,7 +2,6 @@ const textInput = document.getElementById('text-input');
 const checkBtn = document.getElementById('check-btn');
 const result = document.getElementById('result');
 
-
 function palindrome() {
   if (textInput.value === '') {
     alert('please input a value');
@@ -23,8 +22,8 @@ function palindrome() {
   }
 
   if (ispalindrome) {
-    result.innerHTML = textInput.value + " is a palindrome";
+    result.innerHTML = textInput.value + ' is a palindrome';
   } else {
-    result.innerHTML = textInput.value + " is not a palindrome";
+    result.innerHTML = textInput.value + ' is not a palindrome';
   }
 }
