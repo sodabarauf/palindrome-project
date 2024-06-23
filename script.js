@@ -14,7 +14,7 @@ function palindrome() {
   const processedStr = textInput.value.replace(/[\W_]/g, '').toLowerCase();
   let ispalindrome = true;
 
-  for (let i = 0; i < Math.floor(processedStr.length / 2); i++) {
+  for (let i = 0; i < Math.floor(processedStr.length / 2); ++i) {
     if (processedStr[i] !== processedStr[processedStr.length - 1 - i]) {
       ispalindrome = false;
       break;
