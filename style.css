@@ -57,21 +57,21 @@ button {
   color: black;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   body {
-    background-size: cover;
-    padding: 50px;
+    height: 932px;
+    font-size: 20px;
+    padding: 20px;
   }
 
-  .card {
-    margin: 10px;
+  p {
     position: relative;
     display: contents;
     color: white;
   }
-
   .description {
     position: relative;
     display: contents;
   }
+ 
 }
