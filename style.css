@@ -62,6 +62,7 @@ button {
     height: 932px;
     font-size: 20px;
     padding: 20px;
+    position: relative;
   }
 
   p {
@@ -74,4 +75,12 @@ button {
     position: relative;
     display: contents;
   }
+}
+
+@media (max-width: 1024px) {
+  body {
+    height: 1300px;
+    position: relative;
+  }
+
 }
